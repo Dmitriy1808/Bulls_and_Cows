@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include "cows.h"
 
-int cows(int A[N],int B[n])
+int cows(int A[N],int B[N])
 {
     int cor=0;
     for(int i=0;i<4;i++)
