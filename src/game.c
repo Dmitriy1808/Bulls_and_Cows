@@ -14,12 +14,9 @@ void game()
     {	
         input(B[N]);
         num++;
-        int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
-        
-		if (num == 5 )
-			break;
-        printf("       %d %d \t\t\tAttempt &d\n",bull, cor, num);
-        if (bull() == 4)
+       //int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
+        printf("       %d %d \t\t\tAttempt &d\n",bulls(A[N], B[N]), cows(A[N], B[N]), num);
+        if (bulls(A[N], B[N]) == 4)
         {
             printf("YOU ARE WINS!!!");
 			printf("\t\tQUANTITY OF ATTEMPTS=",num);
