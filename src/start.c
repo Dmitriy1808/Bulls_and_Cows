@@ -18,7 +18,7 @@ void start(int A[N],int B[N])
         }
         else
         {
-            system("cls");
+            system("clear");
         }
     }
     system("pause");
