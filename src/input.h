@@ -1,3 +1,4 @@
 #pragma once 
 
-void input(int B[n]);
+void input(int B[N]);
+
