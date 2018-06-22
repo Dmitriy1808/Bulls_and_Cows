@@ -19,7 +19,7 @@ void game(int A[N],int B[N])
         if (bulls(A, B) == 4)
         {
             printf("YOU ARE WINS!!!");
-			printf("\t\tQUANTITY OF ATTEMPTS=",num);
+			printf("\t\tQUANTITY OF ATTEMPTS=%d",num);
             break;
         }
     }
