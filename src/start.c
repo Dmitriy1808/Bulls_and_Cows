@@ -2,7 +2,7 @@
 #include "start.h"
 #include "game.h"
 
-int start(int A[N],int B[N])
+void start(int A[N],int B[N])
 {
     int f = 0;
     int M = 0;

@@ -2,5 +2,5 @@
 
 #define N 4
 
-int start(int A[N],int B[N]);
+void start(int A[N],int B[N]);
 
