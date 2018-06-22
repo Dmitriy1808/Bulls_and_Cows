@@ -7,7 +7,7 @@ void generation(int A[N],int B[N])
 	srand(time(0));//rand
 	for (int i=0; i<N; i++)
 	{
-		bool f;
+		int f;
 		int temp;
 		do
 		{
