@@ -6,7 +6,7 @@ MKDIR_BUILD_SRC = mkdir -p build/src
 
 .PHONY: clean
 
-default: bin/game
+default: bin/final_product
 
 bin/final_product: build/src/input.o build/src/generation.o build/src/start.o build/src/game.o build/src/bulls.o build/src/cows.o
 	mkdir -p bin
