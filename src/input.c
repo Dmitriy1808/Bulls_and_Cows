@@ -4,7 +4,7 @@
 
 void input(int B[N])
 {
-    int q=0,w=0,z=0;
+    int q = 0,w = 0,z = 0;
     label:
     printf("\nInput number\n");
     scanf("%d",&q);
@@ -20,7 +20,7 @@ void input(int B[N])
         else 
         {
             printf("\nNumber no corekc\n");
-            goto lable;
+            goto label;
         }
     }
     for(int i = 0; i < N; i++)
