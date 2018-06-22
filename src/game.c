@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "cows.h"
+#include "bulls.h"
 #include "game.h"
 
 void game()
@@ -18,7 +20,7 @@ void game()
         printf("       %d %d \t\t\tAttempt &d\n",bull, cor, num);
         if (bull() == 4)
         {
-            printf("YOU'RE WINS!!!"<<"\t\tQUANTITY OF ATTEMPTS=",num);
+            printf("YOU'RE WINS!!!\t\tQUANTITY OF ATTEMPTS=",num);
             break;
         }
     }
