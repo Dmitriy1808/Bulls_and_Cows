@@ -4,14 +4,14 @@
 void game()
 {
 	int num=0;
-    generation(int A[N], int B[N]);
+    generation(A[N], B[N]);
     printf("NUMBER B C\n");
     printf("----------\n");
     while(1)
     {	
-        input(int B[N]);
+        input(B[N]);
         num++;
-        int bull=bulls(int A[N], int B[N]), int cor = cows(int A[N], int B[N]);
+        int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
         
 		if (num == 5 )
 			break;
