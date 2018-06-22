@@ -4,7 +4,7 @@
 #include "generation.h"
 #include "game.h"
 
-void game()
+void game(int A[N],int B[N])
 {
 	int num=0;
     generation(A[N], B[N]);

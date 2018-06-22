@@ -5,5 +5,5 @@
 #include "bulls.h"
 #include "cows.h"
 
-void game();
+void game(int A[N],int B[N]);
 
