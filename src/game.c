@@ -4,6 +4,8 @@
 #include "generation.h"
 #include "game.h"
 
+int A[N], B[N];
+
 void game()
 {
 	int num=0;
