@@ -1,3 +1,5 @@
 #pragma once 
 
-int cows(int A[N],int B[n]);
+#define N 4
+
+int cows(int A[N],int B[N]);
