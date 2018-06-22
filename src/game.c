@@ -15,7 +15,7 @@ void game(int A[N],int B[N])
         input(B);
         num++;
        //int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
-        printf("       %d %d \t\t\tAttempt &d\n",bulls(A, B), cows(A, B), num);
+        printf("       %d %d \t\t\tAttempt %d\n",bulls(A, B), cows(A, B), num);
         if (bulls(A, B) == 4)
         {
             printf("YOU ARE WINS!!!");
