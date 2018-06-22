@@ -7,16 +7,16 @@
 void game(int A[N],int B[N])
 {
 	int num=0;
-    generation(A[N], B[N]);
+    generation(A, B);
     printf("NUMBER B C\n");
     printf("----------\n");
     while(1)
     {	
-        input(B[N]);
+        input(B);
         num++;
        //int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
-        printf("       %d %d \t\t\tAttempt &d\n",bulls(A[N], B[N]), cows(A[N], B[N]), num);
-        if (bulls(A[N], B[N]) == 4)
+        printf("       %d %d \t\t\tAttempt &d\n",bulls(A, B), cows(A, B), num);
+        if (bulls(A, B) == 4)
         {
             printf("YOU ARE WINS!!!");
 			printf("\t\tQUANTITY OF ATTEMPTS=",num);
