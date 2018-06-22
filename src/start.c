@@ -3,6 +3,8 @@
 #include "start.h"
 #include "game.h"
 
+int A[N], B[N];
+
 void start(int A[N],int B[N])
 {
     int f = 0;
