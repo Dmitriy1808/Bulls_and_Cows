@@ -13,14 +13,15 @@ void game()
     {	
         input(B[N]);
         num++;
-        int bull=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
+        int b=bulls(A[N], B[N]), int cor = cows(A[N], B[N]);
         
 		if (num == 5 )
 			break;
         printf("       %d %d \t\t\tAttempt &d\n",bull, cor, num);
-        if (bull() == 4)
+        if (b() == 4)
         {
-            printf("YOU'RE WINS!!!\t\tQUANTITY OF ATTEMPTS=",num);
+            printf("YOU ARE WINS!!!");
+			printf("\t\tQUANTITY OF ATTEMPTS=",num);
             break;
         }
     }
