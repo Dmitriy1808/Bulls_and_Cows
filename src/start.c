@@ -3,9 +3,7 @@
 #include "start.h"
 #include "game.h"
 
-
-
-void main()
+int main()
 {
     int A[N], B[N];
     int f = 0;
