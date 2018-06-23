@@ -68,47 +68,47 @@ CTEST(input, string_to_int_ok)
 
 CTEST(cows, full_cows)
 {
-	int A[N] = {1, 2, 3, 4}, B[N] = {1, 2, 3, 4};
-	int res = cows(A, B);
-	int exp = 0;
-	
-	ASSERT_EQUAL(exp, res);
+    int A[N] = {1, 2, 3, 4}, B[N] = {1, 2, 3, 4};
+    int res = cows(A, B);
+    int exp = 0;
+
+    ASSERT_EQUAL(exp, res);
 }
 
 CTEST(cows, null_cows)
 {
-	int A[N] = {1, 2, 3, 4}, B[N] = {4, 3, 2, 1};
-	int res = cows(A, B);
-	int exp = 4;
-	
-	ASSERT_EQUAL(exp, res);
+    int A[N] = {1, 2, 3, 4}, B[N] = {4, 3, 2, 1};
+    int res = cows(A, B);
+    int exp = 4;
+
+    ASSERT_EQUAL(exp, res);
 }
 
 CTEST(cows, several_cows)
 {
-	int A[N] = {1, 2, 3, 4}, B[N] = {1, 3, 2, 4};
-	int res = cows(A, B);
-	int exp = 2;
-	
-	ASSERT_EQUAL(exp, res);
+    int A[N] = {1, 2, 3, 4}, B[N] = {1, 3, 2, 4};
+    int res = cows(A, B);
+    int exp = 2;
+
+    ASSERT_EQUAL(exp, res);
 }
 
 CTEST(check_concidence, concidence_ok)
 {
-	int B[N] = {1, 3, 1, 4};
-	int res = check_concidence(B);
-	int exp = 1;
-	
-	ASSERT_EQUAL(exp, res);
+    int B[N] = {1, 3, 1, 4};
+    int res = check_concidence(B);
+    int exp = 1;
+
+    ASSERT_EQUAL(exp, res);
 }
 
 CTEST(check_concidence, concidence_not_ok)
 {
-	int B[N] = {1, 3, 5, 4};
-	int res = check_concidence(B);
-	int exp = 0;
-	
-	ASSERT_EQUAL(exp, res);
+    int B[N] = {1, 3, 5, 4};
+    int res = check_concidence(B);
+    int exp = 0;
+
+    ASSERT_EQUAL(exp, res);
 }
 
 int main(int argc, const char** argv) {
