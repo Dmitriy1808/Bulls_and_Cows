@@ -4,24 +4,17 @@
 
 void input(int B[N])
 {
-    int q = 0,w = 0,z = 0;
+    char T[5];
     label:
     printf("\nInput number\n");
-    scanf("%d",&q);
-    w = q;
-    for (int i = 0; i < N; i++)
+    scanf("%s",T);
+    if(!(T[4]== '\0' && T[0]>='0' && T[0]<='9' && T[1]>='0' && T[1]<='9' && T[2]>='0' && T[2]<='9' && T[3]>='0' && T[3]<='9'))
     {
-        if (q >= 0 && q <= 9999)
-        {
-            z = w%10;
-            B [3-i] = z;
-            w = w/10;
-        }
-        else 
-        {
-            printf("\nNumber no corekc\n");
-            goto label;
-        }
+        printf("\nNumber not correct\n");
+        goto label;
+    }
+    for (int i = 0; i < 4; i++) {
+        B[i] = T[i] - 48;
     }
     for(int i = 0; i < N; i++)
     {
@@ -29,10 +22,11 @@ void input(int B[N])
        {
             if (B[j] == B[i])
             {
-                printf("\nNumber no corekc\n");
+                printf("\nNumber not correct\n");
                 goto label;
             }   
        }
+       
     }
 }
 
