@@ -4,7 +4,9 @@
 
 int check_num(char T[5])
 {
-    return T[4] == '\0' && T[0] >='0' && T[0] <='9' && T[1] >= '0' && T[1] <= '9' && T[2] >= '0' && T[2] <= '9' && T[3] >= '0' && T[3] <= '9';
+    return T[4] == '\0' && T[0] >= '0' && T[0] <= '9' && T[1] >= '0'
+        && T[1] <= '9' && T[2] >= '0' && T[2] <= '9' && T[3] >= '0'
+        && T[3] <= '9';
 }
 
 void string_to_int(char T[5], int B[4])
@@ -17,12 +19,13 @@ void string_to_int(char T[5], int B[4])
 int check_concidence(int B[4])
 {
     for(int i = 0; i < N; i++) {
-        for (int j = i+1; j < N; j++) {
+        for (int j = i + 1; j < N; j++) {
             if (B[j] == B[i]) {
                 return 1;
             }   
         }
     }
+    
     return 0;
 }
 
